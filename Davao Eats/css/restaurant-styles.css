@@ -1,0 +1,234 @@
+/* Enhanced Background Design */
+body {
+  background: linear-gradient(135deg, #38A3A5, #57cc99);
+  position: relative;
+  overflow-x: hidden;
+  animation: moveBackground 10s linear infinite; /* Add animation */
+}
+
+/* Abstract background shapes */
+body::before,
+body::after {
+  content: '';
+  position: absolute;
+  border-radius: 50%;
+  z-index: 0;
+  opacity: 0.1;
+  pointer-events: none;
+}
+
+body::before {
+  width: 300px;
+  height: 300px;
+  background: radial-gradient(circle at center, #ffffff 0%, transparent 70%);
+  top: 50px;
+  left: -100px;
+}
+
+body::after {
+  width: 400px;
+  height: 400px;
+  background: radial-gradient(circle at center, #ffffff 0%, transparent 70%);
+  bottom: -150px;
+  right: -150px;
+}
+
+/* Extra floating circles for decoration */
+body::after,
+body::before,
+.decorative-circle-1,
+.decorative-circle-2,
+.decorative-circle-3 {
+  position: absolute;
+  border-radius: 50%;
+  opacity: 0.07;
+  background-color: #ffffff;
+  z-index: 0;
+  pointer-events: none;
+  animation: floatCircles 20s linear infinite; 
+}
+
+.decorative-circle-1 {
+  width: 150px;
+  height: 150px;
+  top: 300px;
+  left: -60px;
+}
+
+.decorative-circle-2 {
+  width: 100px;
+  height: 100px;
+  bottom: 200px;
+  right: 50px;
+}
+
+.decorative-circle-3 {
+  width: 200px;
+  height: 200px;
+  top: 100px;
+  right: -100px;
+}
+
+/* Attach decorative circles to body */
+body {
+  position: relative;
+}
+
+/* Page Container */
+.page-container {
+  max-width: 1100px;
+  margin: auto;
+  padding: 20px;
+}
+
+/* Header Section */
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.header-left {
+  position: absolute;
+  top: 10px;
+  left: 20px;
+  display: flex;
+  align-items: center;
+  gap: 15px; 
+}
+
+.back-button {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  text-decoration: none;
+  font-size: 2rem;
+  color: white;
+}
+
+.logo img {
+  height: 60px; 
+  width: auto; 
+}
+
+/* Centered Restaurant Name */
+.restaurant-name {
+  font-size: 2rem;
+  color: #FFFFFF;
+  text-align: center;
+  margin-top: 10px;
+}
+
+/* Image Section */
+.image-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  margin: 20px 0;
+}
+
+.image-background {
+  background-color: #2C6975; 
+  border-radius: 15px; 
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image-section img {
+  width: 100%;
+  max-width: 500px;
+  height: 300px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.arrow {
+  background: none;
+  color: white;
+  border: none;
+  font-size: 2rem;
+  cursor: pointer;
+  position: absolute;
+}
+
+.left-arrow {
+  left: -40px;
+}
+
+.right-arrow {
+  right: -40px;
+}
+
+/* Description Section */
+.description {
+  text-align: center;
+  font-size: 1.3rem;
+  margin: 20px auto;
+  max-width: 800px;
+  line-height: 1.6;
+}
+
+/* Info Section */
+.info-section {
+  background-color: #2C6975;
+  padding: 30px;
+  border-radius: 10px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.info-section h3 {
+  margin-top: 0;
+}
+
+.info-section p {
+  margin: 10px 0;
+}
+
+.social-links img {
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+}
+
+/* Map Section */
+.map-section {
+  margin-top: 20px;
+  text-align: center;
+}
+
+iframe {
+  width: 100%;
+  height: 300px;
+  border: none;
+  border-radius: 10px;
+}
+
+/* ===== Background Animation ===== */
+/* Keyframes for floating circles */
+@keyframes floatCircles {
+  0% {
+    transform: translate(0, 0);
+  }
+  50% {
+    transform: translate(100px, -100px);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
+
+/* Animation for background gradient movement */
+@keyframes moveBackground {
+  0% {
+    background-position: 0 0, 100% 100%, 200% 50%, 300% 0;
+  }
+  100% {
+    background-position: 100% 100%, 200% 50%, 300% 0, 400% 50%;
+  }
+}

@@ -1,0 +1,66 @@
+[
+    {
+      "name": "Marina Tuna",
+      "category": "Seafood",
+      "description": "A seafood lover's paradise...",
+      "address": "Bo. Pampanga, Km. 8 Davao Agusan Road, Lanang, Davao City, Davao del Sur",
+      "image": "food1.jpg",
+      "link": "marina-tuna.html"
+    },
+    {
+      "name": "Boiling Crab",
+      "category": "Seafood",
+      "description": "Where skill meets seafood...",
+      "address": "Garden Village, Lapanday Road, Near Ladislawa Avenue Road, Buhangin, Davao City, 8000 Davao del Sur",
+      "image": "food4.jpg",
+      "link": "boiling-crab.html"
+    },
+    {
+      "name": "Fly O Grill",
+      "category": "Grill",
+      "description": "Satisfying BBQ portions...",
+      "address": "km5 Buhangin-Cabantian-Indangan Rd, Buhangin, Davao City, 8000 Davao del Sur",
+      "image": "food3.jpg",
+      "link": "fly-o-grill.html"
+    },
+    {
+      "name": "Momoyo",
+      "category": "Dessert",
+      "description": "Delightful range of ice cream...",
+      "address": "3JMF+4G6, Lapu-Lapu St, Davao City, Davao del Sur",
+      "image": "food5.jpg",
+      "link": "momoyo.html"
+    },
+    {
+      "name": "Harana Restaurant",
+      "category": "Filipino",
+      "description": "A long-standing destination for genuine Filipino flavors.",
+      "address": "3JJ5+5W4, F. Torres St, Poblacion District, Davao City, Davao del Sur",
+      "image": "food6.jpg",
+      "link": "harana-restaurant.html"
+    },
+    {
+      "name": "Comus Grill",
+      "category": "Grill",
+      "description": "A contemporary take on beloved local dishes.",
+      "address": "4J8H+FC8, Mamay Rd, Buhangin, Davao City, 8000 Davao del Sur",
+      "image": "food7.jpg",
+      "link": "comus-grill.html"
+    },
+    {
+      "name": "Colasas BBQ",
+      "category": "Grill",
+      "description": "The first and original barbeque house in Davao City.",
+      "address": "3J75+3RX, Andres Bonifacio Rotunda, Poblacion District, Davao City, Davao del Sur",
+      "image": "food8.jpg",
+      "link": "colasas-bbq.html"
+    },
+    {
+      "name": "Drip Tea Davao",
+      "category": "Coffee",
+      "description": "A delightful destination for tea and coffee lovers.",
+      "address": "3J95+9H7, 158 Bonifacio St, Poblacion District, Davao City, 8000 Davao del Sur",
+      "image": "food2.jpg",
+      "link": "drip-tea.html"
+    }
+  ]
